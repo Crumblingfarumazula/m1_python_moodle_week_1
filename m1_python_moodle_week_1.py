@@ -1,11 +1,7 @@
-# =====================================================================
 # 1. Solicitar el nombre (string)
-# =====================================================================
 nombre_producto = input("Ingrese el nombre del producto: ")
 
-# =====================================================================
 # 2. Solicitar Precio (float) y Cantidad (int) con validación
-# =====================================================================
 
 while True:
     try:
@@ -33,19 +29,14 @@ while True:
     except ValueError:
         # Tarea 2: Si el usuario ingresa un valor inválido, muestra un mensaje y vuelve a pedirlo.
         print(" Error: Por favor, ingrese un valor numérico válido para la cantidad. Intente de nuevo.")
-
-# =====================================================================
+        
 # TAREA 3: Operación matemática (costo total)
-# =====================================================================
 
 # Crear la variable costo_total para almacenar el resultado de la multiplicación.
 # Asegurarse de que la operación se realice después de validar los datos de entrada (ya lo hicimos).
 costo_total = precio_unitario * cantidad
 
-# =====================================================================
 # TAREA 4: Mostrar resultados
-# =====================================================================
-
 # Usar la función print() para mostrar un mensaje claro con los datos requeridos.
 print("\n--- RESUMEN DE LA TRANSACCIÓN ---")
 print(f"Nombre del producto: {nombre_producto}")
@@ -57,9 +48,7 @@ print(f"Costo total calculado: {costo_total}")
 print("\n--- FORMATO REQUERIDO ---")
 print(f"Producto: {nombre_producto} | Precio: {precio_unitario} | Cantidad: {cantidad} | Total: {costo_total}")
 
-# =====================================================================
 # TAREA 5: Comentario general explicando qué hace el programa completo.
-# =====================================================================
 
 """Este programa en Python solicita el nombre, precio y cantidad de un producto.
 Luego, valida que el precio y la cantidad sean números positivos.
